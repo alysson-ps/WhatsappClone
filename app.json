@@ -1,0 +1,12 @@
+{
+  "name": "WhatsappClone",
+  "displayName": "WhatsappClone",
+  "expo": {
+    "name": "WhatsappClone",
+    "slug": "WhatsappClone",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
