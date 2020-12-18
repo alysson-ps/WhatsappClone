@@ -1,9 +1,8 @@
 import React from "react";
-import { View } from "react-native";
 
-import Call from './pages/calls'
-import Message from './pages/messages'
-import Status from './pages/status'
+import Call from './pages/listCalls'
+import Message from './pages/listMessages'
+import Status from './pages/listStatus'
 
 import styled from 'styled-components/native';
 
