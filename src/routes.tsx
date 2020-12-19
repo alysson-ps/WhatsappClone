@@ -6,7 +6,6 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import Call from './pages/listCalls';
 import Message from './pages/listMessages';
 import Status from './pages/listStatus';
-import { View } from 'react-native';
 
 const Stack = createStackNavigator();
 const Tabs = createMaterialTopTabNavigator();
