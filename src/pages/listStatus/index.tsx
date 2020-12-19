@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+import { Container } from "./status.css";
+
 const Status = () => {
     return(
-        <View> 
+        <Container>
             <Text>Status</Text>
-        </View>
+        </Container>
     )
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-import Call from './pages/listCalls'
-import Message from './pages/listMessages'
-import Status from './pages/listStatus'
+import Call from './pages/listCalls';
+import Message from './pages/listMessages';
+import Status from './pages/listStatus';
 
 import styled from 'styled-components/native';
 
@@ -15,7 +15,7 @@ const Container = styled.View`
 export default function App() {
 	return (
 		<Container>
-			<Call/>
+			<Message/>
 		</Container>
 	);
 }

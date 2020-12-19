@@ -1,9 +1,239 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+import {
+    Container,
+    StartMessage,
+    MessageArea,
+    MessageText,
+    Notification,
+    Name,
+    Photo,
+    TimeTable,
+    TextContainer,
+    NotificationContainer,
+    MessageContainer
+} from "./message.css";
 
 const Message = () => {
     return(
-        <View> <Text>Message</Text> </View>
+        <Container>
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+            
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+            
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+
+
+            <MessageArea>
+                <Photo></Photo>
+                <MessageContainer>
+                    <TextContainer>
+                        <Name>Loli</Name>
+                        <MessageText>Oiii oni-chan</MessageText>
+                    </TextContainer>
+                    <NotificationContainer>
+                        <TimeTable>00:00</TimeTable>
+                        <Notification/>
+                    </NotificationContainer>
+                </MessageContainer>
+            </MessageArea>
+            
+            <StartMessage>
+                <Icon name="home" size={24} color="white" />
+            </StartMessage>
+        </Container>
     )
 }
 
