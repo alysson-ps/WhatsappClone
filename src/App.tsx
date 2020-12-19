@@ -1,8 +1,8 @@
+import 'react-native-gesture-handler';
 import React from "react";
+import { Text } from 'react-native'
 
-import Call from './pages/listCalls';
-import Message from './pages/listMessages';
-import Status from './pages/listStatus';
+import Routes from './routes';
 
 import styled from 'styled-components/native';
 
@@ -14,8 +14,6 @@ const Container = styled.View`
 
 export default function App() {
 	return (
-		<Container>
-			<Message/>
-		</Container>
+		<Routes />
 	);
 }
