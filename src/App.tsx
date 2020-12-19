@@ -14,14 +14,6 @@ const Container = styled.View`
 
 export default function App() {
 	return (
-<<<<<<< HEAD
 		<Routes />
-=======
-		<Container>
-			<Status>
-			
-			</Status>
-		</Container>
->>>>>>> d357ba86950659d09dc1f740c6574da96eb3ef53
 	);
 }
