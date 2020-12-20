@@ -10,7 +10,9 @@ import { Container } from './App.css';
 export default function App() {
 	return (
 		<Container>
-			<Call/>
+			<Status>
+			
+			</Status>
 		</Container>
 	);
 }
