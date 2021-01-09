@@ -1,5 +1,6 @@
-import React from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import React, { useEffect } from 'react';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { FlatList,View,Text } from 'react-native';
 
 import {
     Container,
@@ -12,198 +13,48 @@ import {
     TimeTable,
     TextContainer,
     NotificationContainer,
-    MessageContainer
+    MessageContainer,
+    Line
 } from "./message.css";
 
-import profile from '../../assets/profile.png'; //ts-disable-line
+//@ts-ignore 
+import profile from '../../assets/profile.png'; 
 
 const Message = () => {
     return(
         <Container>
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-            
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-            
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-            
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-            
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
-            <MessageArea>
-                <Photo source={profile}></Photo>
-                <MessageContainer>
-                    <TextContainer>
-                        <Name>Loli</Name>
-                        <MessageText>Oiii oni-chan</MessageText>
-                    </TextContainer>
-                    <NotificationContainer>
-                        <TimeTable>00:00</TimeTable>
-                        <Notification/>
-                    </NotificationContainer>
-                </MessageContainer>
-            </MessageArea>
-
+            <FlatList 
+                data={[1,2,3,4,5,6,7,8,9,0,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}
+                showsVerticalScrollIndicator={false}
+                ItemSeparatorComponent={() => (
+                    <Line/>
+                )}
+                style={{
+                    flex:1,
+                    width: '100%',
+                    height: '100%',
+                    paddingTop: 5
+                }}
+                renderItem={() => (
+                    <MessageArea>
+                        <Photo source={profile}></Photo>
+                        <MessageContainer>
+                            <TextContainer>
+                                <Name>Loli</Name>
+                                <MessageText>Oiii oni-chan</MessageText>
+                            </TextContainer>
+                            <NotificationContainer>
+                                <TimeTable>00:00</TimeTable>
+                                <Notification>
+                                    <Text style={{fontSize:10, fontWeight: 'bold'}}>2</Text>
+                                </Notification>
+                            </NotificationContainer>
+                        </MessageContainer>
+                    </MessageArea>
+                )}
+            />
             <StartMessage>
-                <Icon name="home" size={24} color="white" />
+                <Icon name="android-messages" size={24} color="white" />
             </StartMessage>
         </Container>
     )

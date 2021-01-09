@@ -3,9 +3,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
+import { FontAwesome5 } from '@expo/vector-icons';
+
+import Buttons from './components/stackButtons';
+
 import Call from './pages/listCalls';
 import Message from './pages/listMessages';
 import Status from './pages/listStatus';
+import Camera from './pages/screenCamera';
+import { View } from 'react-native';
 
 const Stack = createStackNavigator();
 const Tabs = createMaterialTopTabNavigator();
@@ -18,7 +24,8 @@ const TabsScreen = () => {
             }}
             tabBarOptions ={{
                 labelStyle:{
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    
                 },
                 indicatorStyle: {
                     backgroundColor: '#2baba4',
@@ -29,10 +36,19 @@ const TabsScreen = () => {
                 },
                 activeTintColor: '#2baba4',
                 inactiveTintColor: '#9d9d9e',
-                
+                showIcon: true,
             }}
-            
+            initialRouteName="message"
         >
+            <Tabs.Screen name="camera" component={Camera} options={{
+                tabBarIcon: ({color}) => (
+                    <FontAwesome5 name="camera" size={18} color={color} />
+                ),
+                tabBarLabel: () => (
+                    <></>
+                )
+                
+            }}/>
             <Tabs.Screen name="message" component={Message} />
             <Tabs.Screen name="status" component={Status} />
             <Tabs.Screen name="call" component={Call} />
@@ -53,12 +69,16 @@ const Routes = () => {
                     elevation: 0
                 },
                 headerTitleStyle:{
-                    color: '#9d9d9e',
+                    color: '#b3b3b3',
                     fontSize: 28,
                 },
                 headerTitle: 'WhatsApp'
             }}>
-                <Stack.Screen name="tabs" component={TabsScreen} />
+                <Stack.Screen name="tabs" component={TabsScreen} options={{
+                    headerRight: () => (
+                        <Buttons/>
+                    )
+                }} />
             </Stack.Navigator>
         </NavigationContainer>
     );
