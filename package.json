@@ -10,7 +10,8 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "expo start",
-    "test": "jest"
+    "test": "jest",
+    "commit": "git-cz"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.10",
@@ -45,6 +46,8 @@
     "@types/react-native": "~0.63.2",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "babel-preset-expo": "~8.3.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-typescript": "^12.3.1",
@@ -61,5 +64,10 @@
   "jest": {
     "preset": "react-native"
   },
-  "private": true
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
