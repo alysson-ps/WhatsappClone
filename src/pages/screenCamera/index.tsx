@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const Status = () => {
+const Camera = () => {
     return(
-        <View> 
-            <Text>Status</Text>
+        <View>
+            <Text>Camera</Text>
         </View>
     )
 }
 
-export default Status;
+export default Camera;
